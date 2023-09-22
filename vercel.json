@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "English-Tagalog-Product-Reviews-Sentiment-Analysis/app.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "English-Tagalog-Product-Reviews-Sentiment-Analysis/app.py"
+        }
+    ]
+}
